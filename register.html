@@ -1,0 +1,238 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html lang="en" class="en oldIE"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="en"><!--<![endif]-->
+<head>
+  <title>Pinterest / Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <link rel="icon" href="https://s-passets-ec.pinimg.com/images/favicon.png" type="image/x-icon" />
+  
+    <link rel="stylesheet" type="text/css" href="https://s-passets-ec.pinimg.com/css/join_756bb0cb.css">
+  
+  
+  
+  
+  <script type="text/javascript">
+    window.main = function() {
+      $(function() {
+          P.Join.Terms.setup();
+          P.WarmRegistration();
+      });
+    }
+  </script>
+
+</head>
+<body class="" onload="$('body').addClass('loaded')">
+  
+
+    <div id="CompleteContainer" class="CreateAccountStep joinStep  ">
+        
+        <div class="education">
+            <div class="bg"></div>
+            <div class="text"><div class="inner">
+              <p><em>Thanks</em>!</p>
+              <p>Based on your choices, we'll select boards to get you started.</p>
+            </div></div>
+        </div>
+        
+      <div class="wrapper">
+        <div class="shadow"></div>
+        <div class="content_wrapper">
+            <div class="content">
+              <div class="header">
+                <h1>Create your account</h1>
+              </div>
+              
+              
+
+              
+              <div id="CompletePhoto">
+                <div class="frame">
+                  <img src="https://s-passets-ec.pinimg.com/images/registration/default-profile.png" alt="Photo of Account Creator" />
+                </div>
+                
+                <div class="buttons">
+                  
+                  <label for="id_img" class="Button WhiteButton Button13 ContrastButton upload" data-text-uploading="Uploading&hellip;">Upload your Photo</label>
+                </div>
+                
+              </div>
+              
+
+              <form id="CompleteAccount" action="register.php" method="POST" accept-charset="utf-8">
+                <ul class="fields">
+                  <li class="field required " id="username" data-validation-short="Please use at least 3 characters"
+                      data-validation-long="Please use less than 15 characters">
+                    <input name="username" maxlength="15" placeholder="Username" autocorrect="off" type="text" id="id_username" />
+                    <label for="id_username">Username</label>
+                    <div class="helper"></div>
+                  </li>
+                  <li class="field required " id="email">
+                    <input name="email" maxlength="100" placeholder="Email Address" autocorrect="off" type="email" id="id_email" />
+                    <label for="id_email">Email Address</label>
+                    <div class="helper"></div>
+                  </li>
+                  <li class="field required " id="password">
+                    <input name="password" placeholder="Password" autocorrect="off" type="password" class="strength_validated_password" id="id_password" />
+                    <label for="id_password">Password</label>
+                    <div class="helper"></div>
+                  </li>
+
+
+                  
+                      <li class="separator"></li>
+                      <li class="field required " id="first_name" data-error="Please enter your first name">
+                        <input name="first_name" maxlength="80" placeholder="First Name" autocorrect="off" type="text" id="id_first_name" />
+                        <label for="id_first_name">First Name</label>
+                        <div class="helper">
+                          
+                        </div>
+                      </li>
+                      <li id="last_name" class="field">
+                        <input name="last_name" maxlength="80" placeholder="Last Name" autocorrect="off" type="text" id="id_last_name" />
+                        <label for="id_last_name">Last Name</label>
+                        <div class="helper">
+                          
+                        </div>
+                      </li>
+                  
+                  
+                  <li class="field">
+                    <label for="id_gender">Gender</label>
+                    <select name="gender" id="id_gender">
+<option value="" selected="selected">Select your gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="unspecified">Unspecified</option>
+</select>
+                    <div class="helper">
+                      
+                    </div>
+                  </li>
+                  
+                  <li class="hidden" id="profile_img">
+                    <input type="hidden" name="user_image_url" value="https://s-passets-ec.pinimg.com/images/registration/default-profile.png" id="id_user_image_url" />
+                  </li>
+                </ul>
+                <div class="fileInput">
+                  <input type="file" name="img" id="id_img" />
+                </div>
+
+                <div class="terms">
+                  
+                  
+                  By creating an account, I accept Geekster's <a href="/about/terms/">Terms of Service</a> and <a href="/about/privacy/">Privacy Policy</a>.
+                </div>
+                <div id="TermsDialog" class="ModalContainer"><div class="modal wide">
+  <div class="header lg">
+    <a href="#" class="close"><strong>Close</strong> <span></span></a>
+    <h2></h2>
+  </div>
+  <div class="body"></div>
+</div></div>
+
+                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='e9ba84f1c346105423638ddc65e582d9' /></div><div style='display:none'><input type='hidden' name='_ch' value='5enf2uep' /></div>
+                <input type="hidden" name="registration_type" value="email" id="id_registration_type" />
+                <div class="buttons">
+                    <button class="Button RedButton Button24 disabled" id="CompleteSignupButton" type="submit"><a href="profile.html">Create Account</a></button>
+                </div>
+            </form><!-- #CompleteAccount -->
+         </div>
+       </div>
+      </div>
+    </div><!-- #CompleteContainer -->
+
+
+  <div id="Loading"></div>
+  
+  
+  <script type="text/javascript" src="https://s-passets-ec.pinimg.com/js/jquery-1.7.1.min.js"></script>
+
+  <script>
+    var weakPasswords = [
+        "pinterest", "password", "123456", "welcome ", "ninja", "abc123", "123456789", "12345678",
+        "sunshine", "princess", "qwerty", "master", "michael", "jordan", "dragon", "soccer", "killer",
+        "pepper", "devil", "princess", "1234567", "iloveyou"
+        ]
+    var passStrengthOpts = {
+        userid: "",
+        shortPassStr: 'Please use at least 6 characters', blackPassStr: 'Password too common',
+        badPassStr: 'Weak Password', goodPassStr: 'OK', strongPassStr: 'Great!',
+        samePasswordStr: 'Username and password identical',
+        badPassStyle: "bad_password", goodPassStyle: "ok_password", strongPassStyle: "strong_password"
+    };
+    $(document).ready( function() {
+        var passStrengthElem = $(".strength_validated_password")
+        if (passStrengthElem.length != 0) {
+            passStrengthElem.passStrength(
+                $(".submit_button_id"),$("#password_validation_msg"), weakPasswords, passStrengthOpts);
+        }
+    });
+</script>
+  
+    <script  type="text/javascript" src="https://s-passets-ec.pinimg.com/js/bundle_join_8d3ba2b5.js"></script> 
+  
+  <script type="text/javascript">
+    function trackGAEvent(category, action, label, value) {
+    _gaq = _gaq || []
+
+
+        // Event
+    _gaq.push(['_trackEvent', category, action, label, value]);
+
+    // Virtual Page
+        virtual_page = '_event_';
+    virtual_page += "/" + category;
+
+    if(!action) action = '_';
+        virtual_page+="/" + action;
+    if(label) virtual_page+= "/" + label;
+
+    _gaq.push(['_trackPageview', virtual_page]);
+
+        
+    }
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12967896-1']);
+    _gaq.push(['_setCustomVar', 1, 'is_logged_in', 'logged out', 2]);
+    _gaq.push(['_setCustomVar', 2, 'page_name', 'register', 1]);
+
+    
+
+    
+    
+        _gaq.push(['_trackPageview']);
+    
+
+    (function() {
+      var ga = document.createElement('script'); ga.type='text/javascript'; ga.async=true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+</script>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+    
+    if (top != self) {
+        $('body').html('<h1>Unauthorized</h1>')
+    }
+});
+</script>
+  
+<script type="text/javascript">
+	(function (){
+			var footer = new Image();
+			footer.src = '/_ch/l55w3h3a';
+	})();
+</script>
+
+
+  
+</body>
+</html>

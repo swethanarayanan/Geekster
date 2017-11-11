@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Geekster</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><a href="#"><span>Geek</span>Ster</a></h1>
+        <h2><br>An online community for all the awesome geeks out there!</br></h2>
+      </div>
+     
+      <div class="clr"></div>
+      <div class="menu_nav">
+        <ul>
+          <li ><a href="newsfeed.html">NewsFeed</a></li>
+          
+          <li class="active"><a href="profilepage.html">Profile</a></li>
+          <li ><a href="groups.html">Groups</a></li>
+          <li><a href="login.html">Log out</a></li>
+        </ul>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div style='height: 550px; width: 25%; border: 0px solid black; float: left;' class="hbg">
+      <br>
+      <img src="img/monkey.jpg" width="223" height="191" alt="" />
+      </br>
+    </div>
+    <div style='height: 550px; width: 75%; border: 0px solid green; float: left;' class="info">
+      <h1>not html, go to profilepage.php</h1>
+
+      <?php
+      include 'api.php';
+
+      $res = mysql_query('SELECT firstname, lastname FROM profile
+      WHERE loginstatus = 1' );
+
+      while($row = mysql_fetch_array($res))
+      {  
+        echo'<div class="commentbody all-round"><h3>'.
+        $row['firstname'].'</h3> ->  '.$row['lastname'].' '.$row['loginstatus'].'
+        </div>'; 
+      }
+      ?>
+
+    </div>
+
+<div class="footer" align="left">
+  <div class="footer_resize">
+    <p class="lf">&copy; Copyright <a href="#">CS2102 Group 21</a>.</p>
+   
+    <div class="clr"></div>
+  </div>
+</div>
+
+</html>
